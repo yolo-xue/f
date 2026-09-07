@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="微信极简纯白主题模块"
+        android:supportsRtl="true">
+
+        <!-- 标记当前 APK 为 Xposed 模块 -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="支持微信全局白色 UI 美化、布局替换与自动化增强。" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+        <meta-data
+            android:name="xposedscope"
+            android:value="com.tencent.mm" /> <!-- 作用域直接锁定微信 -->
+    </application>
+
+</manifest>
